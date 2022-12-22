@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -7,6 +11,7 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  border: 1px dashed orange;
 }
 
 .header {
@@ -14,12 +19,137 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  position: relative;
+  background-color:  #f2f2f2;
 }
+
+.position-absolute {
+  position: absolute;
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
+}
+.logo_place_header {
+  top: 30px;
+  left: 64px;
+  z-index: 5;
+}
+
+
+.header__title_box {
+  height: 100%;
+  display: flex;
+}
+.header__title {
+  width: 730px;
+}
+.header__title_text {
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+}
+.header__title_position {
+  flex: 0 1 auto;
+  margin: auto 0 auto 64px;
+  z-index: 4;
+}
+
+
+.header__subtitle {
+  width: 388px;
+}
+.header__subtitle_text {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.header__subtitle_position {
+  bottom: 30px;
+  left: 64px;
+  z-index: 3;
+}
+
+
+/* стрелка для ссылки */
+.header__link::after {
+  content: " \27F6";
+}
+.link_text-decor_none {
+  text-decoration: none;
+}
+.text-color_blue {
+  color: #2f80ed;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+}
+.header__main-illustration_position {
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.header__img {
+  width: 100%;
+  height: 100%;
+}
+
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+}
+.background-color_blue {
+  background-color: #2f80ed;
+}
+.header__square-pic_position {
+  top: 64px;
+  right: 0;
+}
+
+
+.description {
+  margin: 100px auto;
+  border: 1px solid red;
+  width: 80%;
+}
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.two-columns__brief {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  width: 175px;
+  flex: 1 0 auto;
+  border: 1px solid blue;
+}
+.text-color_blue {
+}
+.two-columns__main-text {
+  border: 1px solid blue;
+}
+.two-columns__paragraph {
+  min-width: 784px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 /* и элемента с модификатором вида ключ-значение */
