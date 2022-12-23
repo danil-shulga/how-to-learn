@@ -231,7 +231,7 @@
   /* заливка фона */
   #f2f2f2
   /* фоновое изображение снизу слева */
-  url(../images/feynman.png) bottom left/867px 637px no-repeat;
+  url(../images/img/feynman.png) bottom left/867px 637px no-repeat;
   position: relative;
 }
 .feynman__title {
