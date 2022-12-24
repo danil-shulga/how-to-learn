@@ -1,4 +1,5 @@
-* {
+/* нормально будет применять это свойство ко всем тегам на странице, на будущее, вдруг пригодится, или нужно только к тем, кому это действительно нужно ? */
+body, div, section, img, h1, h2, h3, h4, h5, ul, li, p, a, span, footer, nav {
   box-sizing: border-box;
 }
 
@@ -108,8 +109,9 @@
 /////
 */
 
+/* заменил у секций паддинг на маржин */
 .description {
-  padding: 100px 0;
+  margin: 100px auto;
   display: flex;
   justify-content: center;
 }
@@ -165,7 +167,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px;
+  margin: 100px auto;
 }
 
 .section-title {
@@ -177,7 +179,7 @@
   font-weight: 600;
 }
 
-.section__subtitle {
+.section-subtitle {
   width: 60%;
   text-align: center;
   margin: 0;
@@ -226,12 +228,9 @@
 
 .feynman {
   width: 100%;
-  height: 890px;
-  background:
-  /* заливка фона */
-  #f2f2f2
-  /* фоновое изображение снизу слева */
-  url(../images/img/feynman.png) bottom left/867px 637px no-repeat;
+  min-height: 890px;
+  /* заливка фона / фоновое изображение снизу слева */
+  background: #f2f2f2 url(../images/img/feynman.png) bottom left/867px 637px no-repeat;
   position: relative;
 }
 .feynman__title {
@@ -285,16 +284,21 @@
   /* цвет текста наследюется по этому в дочерних блоках не указываю */
   color: white;
   position: relative;
-  z-index: -1;
   padding: 90px 0;
 }
 
 /* нет изменений по этому оставил пустым */
-.section-title_theme_dark {}
+.section-title_theme_dark {
+  z-index: 3;
+}
 /* нет изменений по этому оставил пустым */
-.section__subtitle_theme_dark {}
+.section-subtitle_theme_dark {
+  z-index: 3;
+}
 /* нет изменений по этому оставил пустым */
-.table_theme_dark {}
+.table_theme_dark {
+  z-index: 3;
+}
 
 .table__cell_theme_dark {
   width: 200px;
@@ -310,10 +314,10 @@
 .kaufman__triangle {
   width: 877px;
   height: 877px;
+  background: url(../images/img/kaufman-triangle.svg) 0 0/100% 100% no-repeat;
   position: absolute;
   top: 0;
   right: -210px;
-  z-index: -2;
 }
 
 
@@ -341,10 +345,13 @@
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
-  flex: 0 1 711px;
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  flex: 0 1 711px;
   justify-content: space-between;
 }
 
@@ -358,12 +365,10 @@
 }
 
 .footer__column_content_info {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer__column-heading {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -384,8 +389,6 @@
 }
 
 .footer__column_content_social {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer__social-icon {
