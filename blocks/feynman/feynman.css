@@ -1,0 +1,7 @@
+.feynman {
+  width: 100%;
+  min-height: 890px;
+  /* заливка фона / фоновое изображение снизу слева */
+  background: #f2f2f2 url(../../images/img/feynman.png) bottom left/867px 637px no-repeat;
+  position: relative;
+}
