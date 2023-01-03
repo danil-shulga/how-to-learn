@@ -1,0 +1,9 @@
+/* я долго думал чем тут все таки является hover, элементом или ключом, и пришел к выводу, что все таки элементом, потому что вмето hover'a может быть visited/focus/active, так же при hover'e можно заменить цвет, размер и т.д.  */
+.link__hover_opacity {
+  transition: opacity .5s;
+}
+
+.link__hover_opacity:hover {
+  opacity: .75;
+}
+

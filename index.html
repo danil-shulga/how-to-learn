@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="vendor/normalize.css">
   <link rel="stylesheet" href="pages/index.css">
-  <link rel="stylesheet" href="styles/styles.css">
   <title>Научиться учиться</title>
 </head>
 
@@ -18,9 +17,8 @@
         Научиться учиться
       </h1>
       <p class="header__subtitle">
-        Какие современные и эффективные подходы к обучению вы можете использовать в своей
-        жизни?
-        <a href="#" class="header__link">
+        Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
+        <a href="#" target="_blank" class="header__link link__hover_opacity">
           Узнать
         </a>
       </p>
@@ -94,10 +92,10 @@
       </section>
       <section class="video">
         <h2 class="section-title">Видео нa TED</h2>
-        <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
+        <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
-          <iframe  class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe  class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe  class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe  class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
       <section class="oakley" aria-label="История Барбары Оакли">
@@ -114,8 +112,8 @@
       </section>
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
-        <h3 class="feynman__subtitle">Выучить и не забыть</h3>
-        <a href="#" target="_blank" class="feynman__link">Подробнее</a>
+        <p class="feynman__subtitle">Выучить и не забыть</p>
+        <a href="#" target="_blank" class="feynman__link link__hover_opacity">Подробнее</a>
       </section>
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
@@ -161,14 +159,12 @@
         <div class="khan__container">
           <h2 class="khan__author">Салман Хан</h2>
           <h3 class="khan__title">Весь мир — школа</h3>
-          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+          <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
           <h4 class="khan__quote-author">Джордж Лукас</h4>
-          <h5 class="khan__quote-author-subtitle">Кинорежиссер, продюсер</h5>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
-            <div class="khan__book-pic">
-              <img src="images/img/khan-book.jpg" alt="обложка книги: весь мир - школа">
-            </div>
-            <a href="#" target="_blank" class="khan__buy-link">Купить книгу</a>
+              <img src="images/img/khan-book.jpg" class="khan__book-pic" alt="обложка книги: весь мир - школа">
+            <a href="#" target="_blank" class="khan__buy-link link__hover_opacity">Купить книгу</a>
           </div>
         </div>
       </section>
@@ -218,25 +214,27 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ul>
+        <!-- rotation-center добавил специально для смещения точки вращения, потому что изображение треугольника не ровное и без этого свойство он будет вращаться несимметрично -->
+        <!-- а вот с именем класса я не уверен, думал над triangle_rotation_center но его не пропустила овтоматическая проверка -->
         <div class="kaufman__triangle rotation rotation-center"></div>
       </section>
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
-        <nav class="resources__logo-zone">
-          <a href="#" class="resources__link">
+        <div class="resources__logo-zone">
+          <a href="#" class="resources__link link__hover_opacity">
             <img src="images/icon/resources-arzamas.svg" class="resources__logo" alt="лого_арзама">
           </a>
-          <a href="#" class="resources__link">
+          <a href="#" class="resources__link link__hover_opacity">
             <img src="images/icon/resources-n1.svg" class="resources__logo" alt="лого_Н+1">
           </a>
-          <a href="#" class="resources__link">
+          <a href="#" class="resources__link link__hover_opacity">
             <img src="images/icon/resources-strelka.svg" class="resources__logo" alt="лого_стрелка">
           </a>
-          <a href="#" class="resources__link">
+          <a href="#" class="resources__link link__hover_opacity">
             <img src="images/icon/resources-polka.svg" class="resources__logo" alt="лого_полка">
           </a>
-        </nav>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -248,19 +246,19 @@
         <div class="footer__column footer__column_content_info">
           <h3 class="footer__column-heading">О Практикуме</h3>
           <nav class="footer__column-links">
-            <a href="#" class="footer__column-link">Главная</a>
-            <a href="#" class="footer__column-link">Концепция</a>
-            <a href="#" class="footer__column-link">Наставники</a>
+            <a href="#" class="footer__column-link link__hover_opacity">Главная</a>
+            <a href="#" class="footer__column-link link__hover_opacity">Концепция</a>
+            <a href="#" class="footer__column-link link__hover_opacity">Наставники</a>
           </nav>
         </div>
         <div class="footer__column footer__column_content_social">
           <h3 class="footer__column-heading">Соцсети</h3>
           <nav class="footer__column-links">
-            <a href="#" target="_blank" class="footer__column-link"><img src="./images/icon/youtube-icon.svg" alt="ютюб"
+            <a href="#" target="_blank" class="footer__column-link link__hover_opacity"><img src="./images/icon/youtube-icon.svg" alt="ютюб"
                 class="footer__social-icon">YouTube</a>
-            <a href="#" target="_blank" class="footer__column-link"><img src="./images/icon/vk_color_white.svg"
+            <a href="#" target="_blank" class="footer__column-link link__hover_opacity"><img src="./images/icon/vk_color_white.svg"
                 alt="вконтакте" class="footer__social-icon">ВКонтакте</a>
-            <a href="#" target="_blank" class="footer__column-link"><img src="./images/icon/tiktok-icon.svg"
+            <a href="#" target="_blank" class="footer__column-link link__hover_opacity"><img src="./images/icon/tiktok-icon.svg"
                 alt="тикток" class="footer__social-icon">TikTok</a>
           </nav>
         </div>

@@ -7,7 +7,3 @@
 .header__link::after {
   content: " \27F6";
 }
-
-.header__link:hover {
-  opacity: .8;
-}

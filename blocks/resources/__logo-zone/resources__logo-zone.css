@@ -1,4 +1,7 @@
 .resources__logo-zone {
+  display: flex;
+  /* 1100 - (270*4) =20 остаются нераспределенными 20px, по этому добавил justify-content: center для симмертичности */
+  justify-content: center;
   width: 1100px;
   margin: 80px auto 0;
 }
