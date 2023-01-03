@@ -2,7 +2,7 @@
 @import url(../blocks/animation/rotation/rotation.css);
 @import url(../blocks/animation/rotation/rotation-center.css);
 /* link__hover */
-@import url(../blocks/link/__hover/link__hover_opacity.css);
+@import url(../blocks/link/link_hover.css);
 /* page */
 @import url(../blocks/page/page.css);
 /* header */
