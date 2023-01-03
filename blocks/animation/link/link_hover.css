@@ -1,0 +1,8 @@
+[class*=link] {
+  transition: opacity .5s;
+}
+
+[class*=link]:hover {
+  /* color: red; */
+  opacity: .75;
+}

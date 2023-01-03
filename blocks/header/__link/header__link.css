@@ -1,8 +1,13 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  transition: opacity .3s;
 }
 /* стрелка для ссылки */
 .header__link::after {
   content: " \27F6";
+}
+
+.header__link:hover {
+  opacity: .8;
 }
