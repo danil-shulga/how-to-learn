@@ -1,8 +1,9 @@
+/* vendor */
+@import url(../vendor/normalize.css);
 /* animation */
-@import url(../blocks/animation/rotation/rotation.css);
-@import url(../blocks/animation/rotation/rotation-center.css);
-/* link__hover */
-@import url(../blocks/link/link-hover.css);
+@import url(../blocks/rotation/rotation.css);
+/* link-hover */
+@import url(../blocks/link-hover/link-hover.css);
 /* page */
 @import url(../blocks/page/page.css);
 /* header */
